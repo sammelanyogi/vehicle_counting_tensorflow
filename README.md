@@ -7,12 +7,7 @@ This sample project focuses on "Vechicle Detection, Tracking and Counting" using
 
 ---
 <p align="center">
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/Fnaq9nq" data-context="false" >
-<a href="//imgur.com/a/Fnaq9nq">
-</a></blockquote>
-<script async src="//s.imgur.com/min/embed.js" charset="utf-8">
-
-</script>
+  <img src="./ezgif-3-058be8657569.gif">
 </p>
 
 ---
