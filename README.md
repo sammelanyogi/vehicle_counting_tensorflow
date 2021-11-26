@@ -6,9 +6,13 @@ This sample project focuses on "Vechicle Detection, Tracking and Counting" using
 ***The [TensorFlow Object Counting API](https://github.com/ahmetozlu/tensorflow_object_counting_api) is used as a base for object counting on this project, more info can be found on this [repo](https://github.com/ahmetozlu/tensorflow_object_counting_api).***
 
 ---
-
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/22610163/36344830-095cc4ec-1431-11e8-8e57-976c40d87cf9.gif">
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/Fnaq9nq" data-context="false" >
+<a href="//imgur.com/a/Fnaq9nq">
+</a></blockquote>
+<script async src="//s.imgur.com/min/embed.js" charset="utf-8">
+
+</script>
 </p>
 
 ---

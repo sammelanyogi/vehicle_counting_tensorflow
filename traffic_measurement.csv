@@ -1,4 +1,17 @@
 Vehicle Type/Size, Vehicle Color, Vehicle Movement Direction, Vehicle Speed (km/h)
-person,green,down,0.6226237614949545
+car,white,down,16.519378423690796
+bus,black,down,n.a.
+car,green,down,n.a.
+car,white,down,18.782135248184204
+car,white,down,19.31446753718235
 car,black,down,n.a.
-person,black,down,n.a.
+car,black,down,n.a.
+car,black,down,11.348606480492485
+car,green,up,n.a.
+car,white,down,22.521534164746605
+car,white,up,-14.470953212844
+car,orange,down,11.765319693702347
+person,white,down,13.480953574180603
+car,green,down,10.650418202082317
+truck,black,down,n.a.
+car,green,down,15.215977562798395
