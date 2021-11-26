@@ -14,20 +14,10 @@
 # Imports
 import numpy as np
 import os
-import six.moves.urllib as urllib
-import sys
-import tarfile
 import tensorflow as tf
-import zipfile
 import cv2
 import numpy as np
 import csv
-import time
-from packaging import version
-
-from collections import defaultdict
-from io import StringIO
-from PIL import Image
 
 # Object detection imports
 from utils import label_map_util
@@ -41,7 +31,7 @@ with open('traffic_measurement.csv', 'w') as f:
     writer.writerows([csv_line.split(',')])
 
 # input video
-source_video = 'input_video.mp4'
+source_video = 'next_video.mp4'
 cap = cv2.VideoCapture(source_video)
 
 
@@ -72,8 +62,8 @@ NUM_CLASSES = 90
 # Load a (frozen) Tensorflow model into memory.
 detection_graph = tf.Graph()
 with detection_graph.as_default():
-    od_graph_def = tf.GraphDef()
-    with tf.gfile.GFile(PATH_TO_CKPT, 'rb') as fid:
+    od_graph_def = tf.compat.v1.GraphDef()
+    with tf.io.gfile.GFile(PATH_TO_CKPT, 'rb') as fid:
     #od_graph_def = tf.compat.v1.GraphDef() # use this line to run it with TensorFlow version 2.x
     #with tf.compat.v2.io.gfile.GFile(PATH_TO_CKPT, 'rb') as fid: # use this line to run it with TensorFlow version 2.x
         serialized_graph = fid.read()
@@ -108,7 +98,7 @@ def object_detection_function(command):
         output_movie = cv2.VideoWriter(source_video.split(".")[0]+'_output.avi', fourcc, fps, (width, height))
 
     with detection_graph.as_default():
-        with tf.Session(graph=detection_graph) as sess:
+        with tf.compat.v1.Session(graph=detection_graph) as sess:
         #with tf.compat.v1.Session(graph=detection_graph) as sess: # use this line to run it with TensorFlow version 2.x
 
             # Definite input and output Tensors for detection_graph
